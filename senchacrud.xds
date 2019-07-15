@@ -1,0 +1,48 @@
+{
+    "name": "senchacrud",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "6.7.0.63",
+            "frameworkVersion": "6.7.0.212"
+        },
+        "urlPrefixTemplate": "http://localhost:{port}/{path}",
+        "urlPrefix": "http://localhost:43395/",
+        "canvasControls": {
+            "viewportSize": {
+                "name": "iPhone",
+                "builtIn": true,
+                "height": 480,
+                "width": 320
+            },
+            "viewportOrientation": "portrait"
+        },
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true
+    },
+    "xdsVersion": "4.2.5",
+    "xdsBuild": 420,
+    "schemaVersion": 1,
+    "upgradeVersion": 310000000001,
+    "framework": "modern67",
+    "viewOrderMap": {
+        "view": [],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "0fca0449-c2c0-4a9c-918f-42e5cbd17790",
+            "c649b0b7-76bd-4b7b-b6c9-44c2c43f12f7",
+            "08fae809-f73e-4c40-aa68-40ee1968f472"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
