@@ -17,7 +17,9 @@ Ext.define('SenchaCrud.model.Status', {
     extend: 'Ext.data.Model',
 
     requires: [
-        'Ext.data.field.Field'
+        'Ext.data.field.Field',
+        'Ext.data.proxy.Rest',
+        'Ext.data.reader.Json'
     ],
 
 
@@ -28,6 +30,14 @@ Ext.define('SenchaCrud.model.Status', {
         {
             name: 'description'
         }
-    ]
+    ],
+    proxy: {
+        type: 'rest',
+        url: 'http://localhost:8080/api/statuses',
+        reader: {
+            type: 'json',
+            rootProperty: '_embedded.statuses'
+        }
+    }
 
 });

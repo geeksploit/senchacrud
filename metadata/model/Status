@@ -45,6 +45,40 @@
             },
             "name": "field1",
             "designerId": "4f970df1-6fd7-4c86-b4be-3044dee7b489"
+        },
+        {
+            "type": "Ext.data.proxy.Rest",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "http://localhost:8080/api/statuses"
+            },
+            "configAlternates": {
+                "url": "string"
+            },
+            "name": "MyRestProxy",
+            "designerId": "221aa68c-e2ea-4dcf-b398-0bb1cd51d04d",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "_embedded.statuses"
+                    },
+                    "configAlternates": {
+                        "rootProperty": "string"
+                    },
+                    "name": "MyJsonReader",
+                    "designerId": "65f60a07-1860-4d36-ac7c-08fdd1737c93"
+                }
+            ]
         }
     ]
 }
