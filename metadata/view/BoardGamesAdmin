@@ -1,0 +1,72 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userAlias": "boardgamesadmin",
+        "designer|userClassName": "BoardGamesAdmin"
+    },
+    "configAlternates": {
+        "designer|initialView": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "MyTabPanel",
+    "designerId": "1ecc2406-2360-4c8e-8856-d72af48271cb",
+    "viewControllerInstanceId": "13633565-89a1-484c-8034-6bb4d8eb6525",
+    "viewModelInstanceId": "c70a3559-8842-42b0-9202-26853b01ac5c",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Tab 1"
+            },
+            "configAlternates": {
+                "title": "string"
+            },
+            "name": "MyContainer",
+            "designerId": "64dd122e-dfcd-42e1-afcf-e73790dd8654"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Tab 2"
+            },
+            "configAlternates": {
+                "title": "string"
+            },
+            "name": "MyContainer1",
+            "designerId": "2a5d18dc-080f-44bb-969a-4c55661e4eda"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Tab 3"
+            },
+            "configAlternates": {
+                "title": "string"
+            },
+            "name": "MyContainer2",
+            "designerId": "9eb29ee2-ad2d-4790-93bd-2365e44ed934"
+        }
+    ]
+}

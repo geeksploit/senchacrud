@@ -6,10 +6,14 @@
     },
     "codeClass": null,
     "userConfig": {
-        "name": "SenchaCrud"
+        "name": "SenchaCrud",
+        "views": [
+            "BoardGamesAdmin"
+        ]
     },
     "configAlternates": {
-        "name": "string"
+        "name": "string",
+        "views": "typedarray"
     },
     "name": "Application",
     "designerId": "application"
