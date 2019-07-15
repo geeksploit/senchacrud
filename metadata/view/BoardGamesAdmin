@@ -60,13 +60,79 @@
             },
             "codeClass": null,
             "userConfig": {
-                "title": "Tab 3"
+                "title": "Statuses"
             },
             "configAlternates": {
                 "title": "string"
             },
             "name": "MyContainer2",
-            "designerId": "9eb29ee2-ad2d-4790-93bd-2365e44ed934"
+            "designerId": "9eb29ee2-ad2d-4790-93bd-2365e44ed934",
+            "cn": [
+                {
+                    "type": "Ext.grid.Grid",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": "100%",
+                        "name": "StatusesGrid",
+                        "store": "Statuses",
+                        "width": "100%"
+                    },
+                    "configAlternates": {
+                        "height": "auto",
+                        "name": "string",
+                        "store": "store",
+                        "width": "auto"
+                    },
+                    "name": "MyGrid",
+                    "designerId": "1b09611e-c101-45df-885c-e983a70575f7",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "name",
+                                "docked": null,
+                                "text": "Name"
+                            },
+                            "configAlternates": {
+                                "dataIndex": "datafield",
+                                "docked": "string",
+                                "text": "string"
+                            },
+                            "name": "MyColumn1",
+                            "designerId": "bb368a62-60a0-4eda-9f0a-85badc41f647"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "description",
+                                "docked": null,
+                                "text": "Description"
+                            },
+                            "configAlternates": {
+                                "dataIndex": "datafield",
+                                "docked": "string",
+                                "text": "string"
+                            },
+                            "name": "MyColumn2",
+                            "designerId": "ed864403-929c-4c8f-ad4f-eb992ed31ddd"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

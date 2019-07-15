@@ -19,7 +19,8 @@ Ext.define('SenchaCrud.view.BoardGamesAdmin', {
 
     requires: [
         'SenchaCrud.view.BoardGamesAdminViewModel',
-        'Ext.Container'
+        'Ext.grid.Grid',
+        'Ext.grid.column.Column'
     ],
 
     viewModel: {
@@ -37,7 +38,28 @@ Ext.define('SenchaCrud.view.BoardGamesAdmin', {
         },
         {
             xtype: 'container',
-            title: 'Tab 3'
+            title: 'Statuses',
+            items: [
+                {
+                    xtype: 'grid',
+                    height: '100%',
+                    name: 'StatusesGrid',
+                    width: '100%',
+                    store: 'Statuses',
+                    columns: [
+                        {
+                            xtype: 'gridcolumn',
+                            dataIndex: 'name',
+                            text: 'Name'
+                        },
+                        {
+                            xtype: 'gridcolumn',
+                            dataIndex: 'description',
+                            text: 'Description'
+                        }
+                    ]
+                }
+            ]
         }
     ]
 
