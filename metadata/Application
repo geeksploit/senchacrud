@@ -6,12 +6,16 @@
     },
     "codeClass": null,
     "userConfig": {
+        "models": [
+            "Status"
+        ],
         "name": "SenchaCrud",
         "views": [
             "BoardGamesAdmin"
         ]
     },
     "configAlternates": {
+        "models": "typedarray",
         "name": "string",
         "views": "typedarray"
     },
