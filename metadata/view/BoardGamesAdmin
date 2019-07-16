@@ -148,7 +148,25 @@
                         "name": "string"
                     },
                     "name": "MyToolbar",
-                    "designerId": "d98bd2a0-7e6c-44d1-9211-08d7306663af"
+                    "designerId": "d98bd2a0-7e6c-44d1-9211-08d7306663af",
+                    "cn": [
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": "New Status"
+                            },
+                            "configAlternates": {
+                                "text": "string"
+                            },
+                            "name": "MyButton",
+                            "designerId": "a0501892-387f-4868-b06b-b0d33111f1ac"
+                        }
+                    ]
                 }
             ]
         }
