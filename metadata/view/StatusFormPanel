@@ -7,8 +7,11 @@
     "codeClass": null,
     "userConfig": {
         "bodyPadding": 8,
+        "centered": true,
         "designer|userAlias": "statusformpanel",
         "designer|userClassName": "StatusFormPanel",
+        "floating": "true",
+        "modal": true,
         "title": "Status Form"
     },
     "configAlternates": {

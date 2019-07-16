@@ -25,9 +25,15 @@ Ext.define('SenchaCrud.view.StatusFormPanel', {
         'Ext.Spacer'
     ],
 
+    config: {
+        floating: 'true'
+    },
+
     viewModel: {
         type: 'statusformpanel'
     },
+    centered: true,
+    modal: true,
     bodyPadding: 8,
     title: 'Status Form',
 
