@@ -74,7 +74,67 @@
                 "name": "string"
             },
             "name": "MyToolbar1",
-            "designerId": "5631aa7c-a6ff-4445-bec4-d106b11e6f6f"
+            "designerId": "5631aa7c-a6ff-4445-bec4-d106b11e6f6f",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Save"
+                    },
+                    "configAlternates": {
+                        "text": "string"
+                    },
+                    "name": "MyButton1",
+                    "designerId": "780886a9-3683-40d5-a991-521169dc292a"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Cancel"
+                    },
+                    "configAlternates": {
+                        "text": "string"
+                    },
+                    "name": "MyButton2",
+                    "designerId": "0d0b78ab-5c4b-4a2b-a8ed-3eb45a60cd38"
+                },
+                {
+                    "type": "Ext.Spacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "MySpacer",
+                    "designerId": "fc20b133-0c03-4428-8881-a59995d63ead"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Delete"
+                    },
+                    "configAlternates": {
+                        "text": "string"
+                    },
+                    "name": "MyButton3",
+                    "designerId": "bc6cf4f4-8076-4b9e-85b2-d8e28792484d"
+                }
+            ]
         }
     ]
 }

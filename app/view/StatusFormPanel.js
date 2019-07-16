@@ -20,7 +20,9 @@ Ext.define('SenchaCrud.view.StatusFormPanel', {
     requires: [
         'SenchaCrud.view.StatusFormPanelViewModel',
         'Ext.field.Text',
-        'Ext.Toolbar'
+        'Ext.Toolbar',
+        'Ext.Button',
+        'Ext.Spacer'
     ],
 
     viewModel: {
@@ -43,7 +45,24 @@ Ext.define('SenchaCrud.view.StatusFormPanel', {
         {
             xtype: 'toolbar',
             name: 'StatusFormActionToolbar',
-            docked: 'bottom'
+            docked: 'bottom',
+            items: [
+                {
+                    xtype: 'button',
+                    text: 'Save'
+                },
+                {
+                    xtype: 'button',
+                    text: 'Cancel'
+                },
+                {
+                    xtype: 'spacer'
+                },
+                {
+                    xtype: 'button',
+                    text: 'Delete'
+                }
+            ]
         }
     ]
 
