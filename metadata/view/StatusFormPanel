@@ -57,6 +57,24 @@
             },
             "name": "MyTextField1",
             "designerId": "bd36699a-51a1-4cb8-a500-3e17806226dc"
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom",
+                "name": "StatusFormActionToolbar"
+            },
+            "configAlternates": {
+                "docked": "string",
+                "name": "string"
+            },
+            "name": "MyToolbar1",
+            "designerId": "5631aa7c-a6ff-4445-bec4-d106b11e6f6f"
         }
     ]
 }
