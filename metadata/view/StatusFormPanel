@@ -1,0 +1,22 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "statusformpanel",
+        "designer|userClassName": "StatusFormPanel",
+        "title": "Status Form"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "title": "string"
+    },
+    "name": "MyFormPanel",
+    "designerId": "478f2fdd-77eb-42db-b95e-4ef50183b410",
+    "viewControllerInstanceId": "48f55447-7bec-4430-bb9a-0a319b03c9d9",
+    "viewModelInstanceId": "a59dd8a1-5b69-4ff5-99eb-e80f986eac75"
+}
