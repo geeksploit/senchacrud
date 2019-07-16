@@ -20,7 +20,8 @@ Ext.define('SenchaCrud.view.BoardGamesAdmin', {
     requires: [
         'SenchaCrud.view.BoardGamesAdminViewModel',
         'Ext.grid.Grid',
-        'Ext.grid.column.Column'
+        'Ext.grid.column.Column',
+        'Ext.Toolbar'
     ],
 
     viewModel: {
@@ -58,6 +59,11 @@ Ext.define('SenchaCrud.view.BoardGamesAdmin', {
                             text: 'Description'
                         }
                     ]
+                },
+                {
+                    xtype: 'toolbar',
+                    name: 'CrudPanel',
+                    docked: 'bottom'
                 }
             ]
         }

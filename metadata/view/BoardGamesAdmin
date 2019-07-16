@@ -131,6 +131,24 @@
                             "designerId": "ed864403-929c-4c8f-ad4f-eb992ed31ddd"
                         }
                     ]
+                },
+                {
+                    "type": "Ext.Toolbar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": "bottom",
+                        "name": "CrudPanel"
+                    },
+                    "configAlternates": {
+                        "docked": "string",
+                        "name": "string"
+                    },
+                    "name": "MyToolbar",
+                    "designerId": "d98bd2a0-7e6c-44d1-9211-08d7306663af"
                 }
             ]
         }
