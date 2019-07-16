@@ -12,7 +12,7 @@
         "designer|userClassName": "string"
     },
     "name": "MyModel",
-    "designerId": "e2edcb94-fe95-4c2e-9ddf-e657dbe3239c",
+    "designerId": "56b4ce7c-1d70-49ac-8c3b-cbaa138e188d",
     "cn": [
         {
             "type": "Ext.data.field.Field",
@@ -28,7 +28,7 @@
                 "name": "string"
             },
             "name": "field",
-            "designerId": "f40a33cb-68ef-4d61-8708-768b0db442a3"
+            "designerId": "0b1af2f3-3521-4127-a0f8-e52fd3a18683"
         },
         {
             "type": "Ext.data.field.Field",
@@ -44,7 +44,7 @@
                 "name": "string"
             },
             "name": "field1",
-            "designerId": "4f970df1-6fd7-4c86-b4be-3044dee7b489"
+            "designerId": "3f6202a4-91eb-4e8e-b8b6-26f55f6563a1"
         },
         {
             "type": "Ext.data.proxy.Rest",
@@ -60,7 +60,7 @@
                 "url": "string"
             },
             "name": "MyRestProxy",
-            "designerId": "221aa68c-e2ea-4dcf-b398-0bb1cd51d04d",
+            "designerId": "30cc0d89-73fc-45f1-aed7-f2455ea82274",
             "cn": [
                 {
                     "type": "Ext.data.reader.Json",
@@ -76,7 +76,7 @@
                         "rootProperty": "string"
                     },
                     "name": "MyJsonReader",
-                    "designerId": "65f60a07-1860-4d36-ac7c-08fdd1737c93"
+                    "designerId": "1cf377cb-d9b1-4d73-a421-59f6250fe027"
                 }
             ]
         }

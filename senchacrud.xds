@@ -4,10 +4,10 @@
         "cmd": {
             "license": "commercial",
             "cmdVersion": "6.7.0.63",
-            "frameworkVersion": "6.7.0.212"
+            "frameworkVersion": "6.0.2.437"
         },
         "urlPrefixTemplate": "http://localhost:{port}/{path}",
-        "urlPrefix": "http://localhost:41359/",
+        "urlPrefix": "http://localhost:33257/",
         "canvasControls": {
             "viewportSize": {
                 "name": "iPhone",
@@ -35,27 +35,27 @@
     "xdsBuild": 420,
     "schemaVersion": 1,
     "upgradeVersion": 310000000001,
-    "framework": "modern67",
+    "framework": "modern60",
     "viewOrderMap": {
         "view": [
-            "1ecc2406-2360-4c8e-8856-d72af48271cb",
-            "c70a3559-8842-42b0-9202-26853b01ac5c",
-            "13633565-89a1-484c-8034-6bb4d8eb6525",
-            "478f2fdd-77eb-42db-b95e-4ef50183b410",
-            "a59dd8a1-5b69-4ff5-99eb-e80f986eac75",
-            "48f55447-7bec-4430-bb9a-0a319b03c9d9"
+            "223a4697-16c5-4141-87f6-d9cb31305d19",
+            "25542506-22df-4e6f-aa61-f4b9969b2f0d",
+            "dd1a6fec-d22b-4943-86b0-bfef35d4e741",
+            "79da9df4-e5f3-4f1f-9280-2d219c686dcf",
+            "a269d8e5-a9f0-4f85-9a53-b83078d08180",
+            "191dea88-0770-42c1-9dbf-644cf9c5e85c"
         ],
         "store": [
-            "7b5101fa-1d36-4a0d-9324-0fbe718034f5"
+            "e071ab86-e62b-4f72-a09c-e6e73d22cd5c"
         ],
         "controller": [],
         "model": [
-            "e2edcb94-fe95-4c2e-9ddf-e657dbe3239c"
+            "56b4ce7c-1d70-49ac-8c3b-cbaa138e188d"
         ],
         "resource": [
-            "06c43504-8398-4908-aa8a-fba8c5fed4f4",
-            "c649b0b7-76bd-4b7b-b6c9-44c2c43f12f7",
-            "08fae809-f73e-4c40-aa68-40ee1968f472"
+            "9373c8f0-a418-4933-a5cf-b1f5183f3eda",
+            "c43d7e53-1d03-4968-a8f7-53d588e51fd6",
+            "3caaef15-f856-4d32-b2ea-ceaac77367a1"
         ],
         "app": [
             "application"

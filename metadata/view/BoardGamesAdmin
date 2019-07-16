@@ -16,9 +16,9 @@
         "designer|userClassName": "string"
     },
     "name": "MyTabPanel",
-    "designerId": "1ecc2406-2360-4c8e-8856-d72af48271cb",
-    "viewControllerInstanceId": "13633565-89a1-484c-8034-6bb4d8eb6525",
-    "viewModelInstanceId": "c70a3559-8842-42b0-9202-26853b01ac5c",
+    "designerId": "223a4697-16c5-4141-87f6-d9cb31305d19",
+    "viewControllerInstanceId": "dd1a6fec-d22b-4943-86b0-bfef35d4e741",
+    "viewModelInstanceId": "25542506-22df-4e6f-aa61-f4b9969b2f0d",
     "cn": [
         {
             "type": "Ext.Container",
@@ -34,7 +34,7 @@
                 "title": "string"
             },
             "name": "MyContainer",
-            "designerId": "64dd122e-dfcd-42e1-afcf-e73790dd8654"
+            "designerId": "fc63c095-b31a-4d21-860d-1ab63c7fb8db"
         },
         {
             "type": "Ext.Container",
@@ -50,7 +50,7 @@
                 "title": "string"
             },
             "name": "MyContainer1",
-            "designerId": "2a5d18dc-080f-44bb-969a-4c55661e4eda"
+            "designerId": "7a0feb5f-f950-4966-a3af-451815511067"
         },
         {
             "type": "Ext.Container",
@@ -66,7 +66,7 @@
                 "title": "string"
             },
             "name": "MyContainer2",
-            "designerId": "9eb29ee2-ad2d-4790-93bd-2365e44ed934",
+            "designerId": "c72886c8-785a-4dda-8f24-a37ceb06e562",
             "cn": [
                 {
                     "type": "Ext.grid.Grid",
@@ -77,18 +77,16 @@
                     "codeClass": null,
                     "userConfig": {
                         "height": "100%",
-                        "name": "StatusesGrid",
                         "store": "Statuses",
                         "width": "100%"
                     },
                     "configAlternates": {
                         "height": "auto",
-                        "name": "string",
                         "store": "store",
                         "width": "auto"
                     },
                     "name": "MyGrid",
-                    "designerId": "1b09611e-c101-45df-885c-e983a70575f7",
+                    "designerId": "12e2db8c-2fa9-4ce7-a1fd-8df1845dbcff",
                     "cn": [
                         {
                             "type": "Ext.grid.column.Column",
@@ -99,16 +97,20 @@
                             "codeClass": null,
                             "userConfig": {
                                 "dataIndex": "name",
+                                "designer|displayName": "Name",
                                 "docked": null,
-                                "text": "Name"
+                                "text": "Name1",
+                                "width": 70
                             },
                             "configAlternates": {
                                 "dataIndex": "datafield",
+                                "designer|displayName": "string",
                                 "docked": "string",
-                                "text": "string"
+                                "text": "string",
+                                "width": "auto"
                             },
-                            "name": "MyColumn1",
-                            "designerId": "bb368a62-60a0-4eda-9f0a-85badc41f647"
+                            "name": "MyColumn",
+                            "designerId": "75bd26d2-66d5-4326-ab1f-88396d893782"
                         },
                         {
                             "type": "Ext.grid.column.Column",
@@ -119,16 +121,20 @@
                             "codeClass": null,
                             "userConfig": {
                                 "dataIndex": "description",
+                                "designer|displayName": "Description",
                                 "docked": null,
-                                "text": "Description"
+                                "text": "Description",
+                                "width": 70
                             },
                             "configAlternates": {
                                 "dataIndex": "datafield",
                                 "docked": "string",
-                                "text": "string"
+                                "text": "string",
+                                "width": "auto",
+                                "designer|displayName": "string"
                             },
-                            "name": "MyColumn2",
-                            "designerId": "ed864403-929c-4c8f-ad4f-eb992ed31ddd"
+                            "name": "MyColumn1",
+                            "designerId": "0e10508b-6cc8-4df3-8d58-60fc5f9fe694"
                         }
                     ]
                 },
@@ -140,15 +146,15 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "docked": "bottom",
-                        "name": "CrudPanel"
+                        "designer|displayName": "CrudPanel",
+                        "docked": "bottom"
                     },
                     "configAlternates": {
-                        "docked": "string",
-                        "name": "string"
+                        "designer|displayName": "string",
+                        "docked": "string"
                     },
                     "name": "MyToolbar",
-                    "designerId": "d98bd2a0-7e6c-44d1-9211-08d7306663af",
+                    "designerId": "926583bc-edb6-4ee7-9fb5-e255b0ba24b8",
                     "cn": [
                         {
                             "type": "Ext.Button",
@@ -158,13 +164,15 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "designer|displayName": "New Status",
                                 "text": "New Status"
                             },
                             "configAlternates": {
+                                "designer|displayName": "string",
                                 "text": "string"
                             },
                             "name": "MyButton",
-                            "designerId": "a0501892-387f-4868-b06b-b0d33111f1ac"
+                            "designerId": "56335117-5c57-435a-b9f0-12a03b233fb5"
                         }
                     ]
                 }

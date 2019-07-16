@@ -4,7 +4,7 @@
    "version": "1.0.0.0",
    "framework": "ext",
    "toolkit": "modern",
-   "theme": "theme-triton-08fae809-f73e-4c40-aa68-40ee1968f472",
+   "theme": "theme-triton-3caaef15-f856-4d32-b2ea-ceaac77367a1",
    "requires": [
       "font-awesome"
    ],
@@ -16,7 +16,6 @@
       "overrides"
    ],
    "fashion": {
-      "missingParameters": "error",
       "inliner": {
          "enable": false
       }
@@ -118,5 +117,5 @@
    "ignore": [
       "(^|/)CVS(/?$|/.*?$)"
    ],
-   "id": "6af40e20-9824-4289-b855-f180e5d132a7"
+   "id": "c79b644b-267c-42b5-b533-963c62a85eb7"
 }

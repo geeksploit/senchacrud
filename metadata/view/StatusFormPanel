@@ -13,14 +13,24 @@
     },
     "configAlternates": {
         "bodyPadding": "auto",
+        "centered": "boolean",
         "designer|userAlias": "string",
         "designer|userClassName": "string",
+        "floating": "string",
+        "modal": "boolean",
         "title": "string"
     },
     "name": "MyFormPanel",
-    "designerId": "478f2fdd-77eb-42db-b95e-4ef50183b410",
-    "viewControllerInstanceId": "48f55447-7bec-4430-bb9a-0a319b03c9d9",
-    "viewModelInstanceId": "a59dd8a1-5b69-4ff5-99eb-e80f986eac75",
+    "designerId": "79da9df4-e5f3-4f1f-9280-2d219c686dcf",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "floating",
+            "type": "string"
+        }
+    ],
+    "viewControllerInstanceId": "191dea88-0770-42c1-9dbf-644cf9c5e85c",
+    "viewModelInstanceId": "a269d8e5-a9f0-4f85-9a53-b83078d08180",
     "cn": [
         {
             "type": "Ext.field.Text",
@@ -30,15 +40,15 @@
             },
             "codeClass": null,
             "userConfig": {
-                "label": "Name",
-                "name": "Name"
+                "designer|displayName": "Name",
+                "label": "Name"
             },
             "configAlternates": {
-                "label": "string",
-                "name": "string"
+                "designer|displayName": "string",
+                "label": "string"
             },
             "name": "MyTextField",
-            "designerId": "5b6438ca-e794-4081-80ed-d4d6b1a871f4"
+            "designerId": "a96b9d14-c335-4839-88d9-78fa57593d32"
         },
         {
             "type": "Ext.field.Text",
@@ -48,15 +58,15 @@
             },
             "codeClass": null,
             "userConfig": {
-                "label": "Description",
-                "name": "Description"
+                "designer|displayName": "Description",
+                "label": "Description"
             },
             "configAlternates": {
-                "label": "string",
-                "name": "string"
+                "designer|displayName": "string",
+                "label": "string"
             },
             "name": "MyTextField1",
-            "designerId": "bd36699a-51a1-4cb8-a500-3e17806226dc"
+            "designerId": "93b92367-defd-42c8-a0c5-23bfbf71c3e6"
         },
         {
             "type": "Ext.Toolbar",
@@ -66,15 +76,15 @@
             },
             "codeClass": null,
             "userConfig": {
-                "docked": "bottom",
-                "name": "StatusFormActionToolbar"
+                "designer|displayName": "StatusFormActionToolbar",
+                "docked": "bottom"
             },
             "configAlternates": {
-                "docked": "string",
-                "name": "string"
+                "designer|displayName": "string",
+                "docked": "string"
             },
             "name": "MyToolbar1",
-            "designerId": "5631aa7c-a6ff-4445-bec4-d106b11e6f6f",
+            "designerId": "3a170e84-024a-40a3-a1c2-c1a66b2c031f",
             "cn": [
                 {
                     "type": "Ext.Button",
@@ -90,7 +100,7 @@
                         "text": "string"
                     },
                     "name": "MyButton1",
-                    "designerId": "780886a9-3683-40d5-a991-521169dc292a"
+                    "designerId": "5d70cbc9-6184-4db3-b569-057928e2eab2"
                 },
                 {
                     "type": "Ext.Button",
@@ -106,7 +116,7 @@
                         "text": "string"
                     },
                     "name": "MyButton2",
-                    "designerId": "0d0b78ab-5c4b-4a2b-a8ed-3eb45a60cd38"
+                    "designerId": "5e5ed5da-1ed9-4439-b034-141965deb42d"
                 },
                 {
                     "type": "Ext.Spacer",
@@ -116,7 +126,7 @@
                     },
                     "codeClass": null,
                     "name": "MySpacer",
-                    "designerId": "fc20b133-0c03-4428-8881-a59995d63ead"
+                    "designerId": "e26f1689-7eba-4a89-b9bc-b1cd42efcbec"
                 },
                 {
                     "type": "Ext.Button",
@@ -132,7 +142,7 @@
                         "text": "string"
                     },
                     "name": "MyButton3",
-                    "designerId": "bc6cf4f4-8076-4b9e-85b2-d8e28792484d"
+                    "designerId": "72ac9f76-9234-46c3-9da4-8bc0ad34a439"
                 }
             ]
         }
