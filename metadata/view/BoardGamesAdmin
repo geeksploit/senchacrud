@@ -76,14 +76,18 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|displayName": "StatusGrid",
                         "height": "100%",
+                        "itemId": "statusgrid",
                         "store": "Statuses",
                         "width": "100%"
                     },
                     "configAlternates": {
                         "height": "auto",
                         "store": "store",
-                        "width": "auto"
+                        "width": "auto",
+                        "designer|displayName": "string",
+                        "itemId": "string"
                     },
                     "name": "MyGrid",
                     "designerId": "12e2db8c-2fa9-4ce7-a1fd-8df1845dbcff",

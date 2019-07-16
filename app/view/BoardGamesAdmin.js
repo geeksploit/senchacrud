@@ -46,6 +46,7 @@ Ext.define('SenchaCrud.view.BoardGamesAdmin', {
                 {
                     xtype: 'grid',
                     height: '100%',
+                    itemId: 'statusgrid',
                     width: '100%',
                     store: 'Statuses',
                     columns: [
