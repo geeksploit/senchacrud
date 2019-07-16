@@ -28,6 +28,7 @@ Ext.define('SenchaCrud.view.BoardGamesAdmin', {
     viewModel: {
         type: 'boardgamesadmin'
     },
+    defaultListenerScope: true,
 
     items: [
         {
@@ -68,12 +69,27 @@ Ext.define('SenchaCrud.view.BoardGamesAdmin', {
                     items: [
                         {
                             xtype: 'button',
-                            text: 'New Status'
+                            itemId: 'newstatusbutton',
+                            text: 'New Status',
+                            listeners: {
+                                tap: 'onNewStatusButtonTap'
+                            }
                         }
                     ]
                 }
             ]
         }
-    ]
+    ],
+
+    onNewStatusButtonTap: function(button, e, eOpts) {
+        var optimalWidth = Math.floor(Ext.Viewport.windowWidth * 0.9);
+        console.log(optimalWidth);
+        Ext.Viewport.add({
+            xtype: 'statusformpanel',
+            maxWidth: 500,
+            minWidth: 300,
+            width: optimalWidth
+        });
+    }
 
 });

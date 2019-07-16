@@ -165,14 +165,47 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|displayName": "New Status",
+                                "itemId": "newstatusbutton",
                                 "text": "New Status"
                             },
                             "configAlternates": {
                                 "designer|displayName": "string",
-                                "text": "string"
+                                "text": "string",
+                                "itemId": "string"
                             },
                             "name": "MyButton",
-                            "designerId": "56335117-5c57-435a-b9f0-12a03b233fb5"
+                            "designerId": "56335117-5c57-435a-b9f0-12a03b233fb5",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onNewStatusButtonTap",
+                                        "implHandler": [
+                                            "var optimalWidth = Math.floor(Ext.Viewport.windowWidth * 0.9);",
+                                            "console.log(optimalWidth);",
+                                            "Ext.Viewport.add({",
+                                            "    xtype: 'statusformpanel',",
+                                            "    maxWidth: 500,",
+                                            "    minWidth: 300,",
+                                            "    width: optimalWidth",
+                                            "});"
+                                        ],
+                                        "name": "tap"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string"
+                                    },
+                                    "name": "onNewStatusButtonTap",
+                                    "designerId": "afcaa30e-ff20-4ad1-bb82-80e962e87427"
+                                }
+                            ]
                         }
                     ]
                 }
