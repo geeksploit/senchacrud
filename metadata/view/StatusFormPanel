@@ -6,11 +6,13 @@
     },
     "codeClass": null,
     "userConfig": {
+        "bodyPadding": 8,
         "designer|userAlias": "statusformpanel",
         "designer|userClassName": "StatusFormPanel",
         "title": "Status Form"
     },
     "configAlternates": {
+        "bodyPadding": "auto",
         "designer|userAlias": "string",
         "designer|userClassName": "string",
         "title": "string"
@@ -18,5 +20,43 @@
     "name": "MyFormPanel",
     "designerId": "478f2fdd-77eb-42db-b95e-4ef50183b410",
     "viewControllerInstanceId": "48f55447-7bec-4430-bb9a-0a319b03c9d9",
-    "viewModelInstanceId": "a59dd8a1-5b69-4ff5-99eb-e80f986eac75"
+    "viewModelInstanceId": "a59dd8a1-5b69-4ff5-99eb-e80f986eac75",
+    "cn": [
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "label": "Name",
+                "name": "Name"
+            },
+            "configAlternates": {
+                "label": "string",
+                "name": "string"
+            },
+            "name": "MyTextField",
+            "designerId": "5b6438ca-e794-4081-80ed-d4d6b1a871f4"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "label": "Description",
+                "name": "Description"
+            },
+            "configAlternates": {
+                "label": "string",
+                "name": "string"
+            },
+            "name": "MyTextField1",
+            "designerId": "bd36699a-51a1-4cb8-a500-3e17806226dc"
+        }
+    ]
 }

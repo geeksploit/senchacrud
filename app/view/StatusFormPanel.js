@@ -18,12 +18,27 @@ Ext.define('SenchaCrud.view.StatusFormPanel', {
     alias: 'widget.statusformpanel',
 
     requires: [
-        'SenchaCrud.view.StatusFormPanelViewModel'
+        'SenchaCrud.view.StatusFormPanelViewModel',
+        'Ext.field.Text'
     ],
 
     viewModel: {
         type: 'statusformpanel'
     },
-    title: 'Status Form'
+    bodyPadding: 8,
+    title: 'Status Form',
+
+    items: [
+        {
+            xtype: 'textfield',
+            name: 'Name',
+            label: 'Name'
+        },
+        {
+            xtype: 'textfield',
+            name: 'Description',
+            label: 'Description'
+        }
+    ]
 
 });
