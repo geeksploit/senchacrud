@@ -92,7 +92,6 @@ Ext.define('SenchaCrud.view.BoardGamesAdmin', {
 
     onNewStatusButtonTap: function(button, e, eOpts) {
         var optimalWidth = Math.floor(Ext.Viewport.windowWidth * 0.9);
-        console.log(optimalWidth);
         Ext.Viewport.add({
             xtype: 'statusformpanel',
             width: optimalWidth
