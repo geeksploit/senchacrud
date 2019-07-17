@@ -40,10 +40,12 @@ Ext.define('SenchaCrud.view.StatusFormPanel', {
     items: [
         {
             xtype: 'textfield',
+            bind: '{record.name}',
             label: 'Name'
         },
         {
             xtype: 'textfield',
+            bind: '{record.description}',
             label: 'Description'
         },
         {

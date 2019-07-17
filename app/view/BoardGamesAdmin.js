@@ -19,12 +19,14 @@ Ext.define('SenchaCrud.view.BoardGamesAdmin', {
 
     requires: [
         'SenchaCrud.view.BoardGamesAdminViewModel',
+        'SenchaCrud.view.BoardGamesAdminViewController',
         'Ext.grid.Grid',
         'Ext.grid.column.Column',
         'Ext.Toolbar',
         'Ext.Button'
     ],
 
+    controller: 'boardgamesadmin',
     viewModel: {
         type: 'boardgamesadmin'
     },
@@ -62,7 +64,13 @@ Ext.define('SenchaCrud.view.BoardGamesAdmin', {
                             dataIndex: 'description',
                             text: 'Description'
                         }
-                    ]
+                    ],
+                    listeners: {
+                        itemsingletap: {
+                            fn: 'onStatusGridItemSingleTap',
+                            scope: 'controller'
+                        }
+                    }
                 },
                 {
                     xtype: 'toolbar',

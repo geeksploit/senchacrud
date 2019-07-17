@@ -43,12 +43,16 @@
             },
             "codeClass": null,
             "userConfig": {
+                "bind": [
+                    "{record.name}"
+                ],
                 "designer|displayName": "Name",
                 "label": "Name"
             },
             "configAlternates": {
                 "designer|displayName": "string",
-                "label": "string"
+                "label": "string",
+                "bind": "object"
             },
             "name": "MyTextField",
             "designerId": "a96b9d14-c335-4839-88d9-78fa57593d32"
@@ -61,12 +65,16 @@
             },
             "codeClass": null,
             "userConfig": {
+                "bind": [
+                    "{record.description}"
+                ],
                 "designer|displayName": "Description",
                 "label": "Description"
             },
             "configAlternates": {
                 "designer|displayName": "string",
-                "label": "string"
+                "label": "string",
+                "bind": "object"
             },
             "name": "MyTextField1",
             "designerId": "93b92367-defd-42c8-a0c5-23bfbf71c3e6"

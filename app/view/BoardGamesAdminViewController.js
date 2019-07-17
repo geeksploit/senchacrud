@@ -15,5 +15,20 @@
 
 Ext.define('SenchaCrud.view.BoardGamesAdminViewController', {
     extend: 'Ext.app.ViewController',
-    alias: 'controller.boardgamesadmin'
+    alias: 'controller.boardgamesadmin',
+
+    onStatusGridItemSingleTap: function(dataview, index, target, record, e, eOpts) {
+        var optimalWidth = Math.floor(Ext.Viewport.windowWidth * 0.9);
+        Ext.Viewport.add({
+            xtype: 'statusformpanel',
+            width: optimalWidth,
+            record: record,
+            viewModel: {
+                data: {
+                    record: record
+                }
+            }
+        });
+    }
+
 });

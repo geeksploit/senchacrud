@@ -139,6 +139,40 @@
                             },
                             "name": "MyColumn1",
                             "designerId": "0e10508b-6cc8-4df3-8d58-60fc5f9fe694"
+                        },
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onStatusGridItemSingleTap",
+                                "implHandler": [
+                                    "var optimalWidth = Math.floor(Ext.Viewport.windowWidth * 0.9);",
+                                    "Ext.Viewport.add({",
+                                    "    xtype: 'statusformpanel',",
+                                    "    width: optimalWidth,",
+                                    "    record: record,",
+                                    "    viewModel: {",
+                                    "        data: {",
+                                    "            record: record",
+                                    "        }",
+                                    "    }",
+                                    "});"
+                                ],
+                                "name": "itemsingletap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onStatusGridItemSingleTap",
+                            "designerId": "1d2b920a-f10f-4612-b915-843179d7c3f9"
                         }
                     ]
                 },
