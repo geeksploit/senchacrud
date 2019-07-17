@@ -33,6 +33,8 @@ Ext.define('SenchaCrud.view.StatusFormPanel', {
         type: 'statusformpanel'
     },
     centered: true,
+    maxWidth: 500,
+    minWidth: 300,
     modal: true,
     bodyPadding: 8,
     title: 'Status Form',

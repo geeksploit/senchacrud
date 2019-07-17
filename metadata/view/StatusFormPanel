@@ -11,6 +11,8 @@
         "designer|userAlias": "statusformpanel",
         "designer|userClassName": "StatusFormPanel",
         "floating": "true",
+        "maxWidth": 500,
+        "minWidth": 300,
         "modal": true,
         "title": "Status Form"
     },
@@ -21,7 +23,9 @@
         "designer|userClassName": "string",
         "floating": "string",
         "modal": "boolean",
-        "title": "string"
+        "title": "string",
+        "maxWidth": "auto",
+        "minWidth": "auto"
     },
     "name": "MyFormPanel",
     "designerId": "79da9df4-e5f3-4f1f-9280-2d219c686dcf",

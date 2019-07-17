@@ -95,8 +95,6 @@ Ext.define('SenchaCrud.view.BoardGamesAdmin', {
         console.log(optimalWidth);
         Ext.Viewport.add({
             xtype: 'statusformpanel',
-            maxWidth: 500,
-            minWidth: 300,
             width: optimalWidth
         });
     }
