@@ -82,11 +82,10 @@ Ext.define('SenchaCrud.view.StatusFormPanelViewController', {
             jsonData: record.data,
             success: function(response, opts) {
                 console.log('success');
-                record.commit();
+                Ext.getStore('Statuses').remove(record);
             },
             failure: function(response, opts) {
                 console.log('failure');
-                record.reject();
             }
         });
 
