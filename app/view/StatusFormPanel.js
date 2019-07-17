@@ -19,6 +19,7 @@ Ext.define('SenchaCrud.view.StatusFormPanel', {
 
     requires: [
         'SenchaCrud.view.StatusFormPanelViewModel',
+        'SenchaCrud.view.StatusFormPanelViewController',
         'Ext.field.Text',
         'Ext.Toolbar',
         'Ext.Button',
@@ -29,6 +30,7 @@ Ext.define('SenchaCrud.view.StatusFormPanel', {
         floating: 'true'
     },
 
+    controller: 'statusformpanel',
     viewModel: {
         type: 'statusformpanel'
     },
@@ -60,7 +62,10 @@ Ext.define('SenchaCrud.view.StatusFormPanel', {
                 },
                 {
                     xtype: 'button',
-                    text: 'Cancel'
+                    text: 'Cancel',
+                    listeners: {
+                        tap: 'onCancelButtonTap'
+                    }
                 },
                 {
                     xtype: 'spacer'

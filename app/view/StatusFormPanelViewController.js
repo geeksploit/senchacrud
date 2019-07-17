@@ -15,5 +15,15 @@
 
 Ext.define('SenchaCrud.view.StatusFormPanelViewController', {
     extend: 'Ext.app.ViewController',
-    alias: 'controller.statusformpanel'
+    alias: 'controller.statusformpanel',
+
+    onCancelButtonTap: function(button, e, eOpts) {
+        var view = this.getView(),
+            record = view.getRecord();
+        view.destroy();
+        if (record) {
+            record.reject();
+        }
+    }
+
 });
