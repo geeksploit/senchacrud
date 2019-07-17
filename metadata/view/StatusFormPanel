@@ -51,12 +51,14 @@
                     "{record.name}"
                 ],
                 "designer|displayName": "Name",
-                "label": "Name"
+                "label": "Name",
+                "name": "name"
             },
             "configAlternates": {
                 "designer|displayName": "string",
                 "label": "string",
-                "bind": "object"
+                "bind": "object",
+                "name": "string"
             },
             "name": "MyTextField",
             "designerId": "a96b9d14-c335-4839-88d9-78fa57593d32"
@@ -73,12 +75,14 @@
                     "{record.description}"
                 ],
                 "designer|displayName": "Description",
-                "label": "Description"
+                "label": "Description",
+                "name": "description"
             },
             "configAlternates": {
                 "designer|displayName": "string",
                 "label": "string",
-                "bind": "object"
+                "bind": "object",
+                "name": "string"
             },
             "name": "MyTextField1",
             "designerId": "93b92367-defd-42c8-a0c5-23bfbf71c3e6"
@@ -117,7 +121,52 @@
                         "id": "string"
                     },
                     "name": "MyButton1",
-                    "designerId": "5d70cbc9-6184-4db3-b569-057928e2eab2"
+                    "designerId": "5d70cbc9-6184-4db3-b569-057928e2eab2",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onSaveTap",
+                                "implHandler": [
+                                    "var view = this.getView(),",
+                                    "    data = view.getValues();",
+                                    "",
+                                    "Ext.Ajax.request({",
+                                    "    url: 'http://localhost:8080/api/statuses',",
+                                    "    method: 'POST',",
+                                    "    jsonData: data,",
+                                    "    success: function(response, opts) {",
+                                    "        console.log('success');",
+                                    "        var json = Ext.JSON.decode(response.responseText),",
+                                    "            record = Ext.create('SenchaCrud.model.Status', json);",
+                                    "        Ext.getStore('Statuses').add(record);",
+                                    "    },",
+                                    "    failure: function(response, opts) {",
+                                    "        console.log('failure');",
+                                    "    }",
+                                    "});",
+                                    "",
+                                    "view.destroy();",
+                                    ""
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onSaveTap",
+                            "designerId": "183d7121-5717-45ec-a467-92bc33d93233"
+                        }
+                    ]
                 },
                 {
                     "type": "Ext.Button",

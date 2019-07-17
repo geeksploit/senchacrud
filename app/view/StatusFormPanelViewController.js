@@ -17,6 +17,29 @@ Ext.define('SenchaCrud.view.StatusFormPanelViewController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.statusformpanel',
 
+    onSaveTap: function(button, e, eOpts) {
+        var view = this.getView(),
+            data = view.getValues();
+
+        Ext.Ajax.request({
+            url: 'http://localhost:8080/api/statuses',
+            method: 'POST',
+            jsonData: data,
+            success: function(response, opts) {
+                console.log('success');
+                var json = Ext.JSON.decode(response.responseText),
+                    record = Ext.create('SenchaCrud.model.Status', json);
+                Ext.getStore('Statuses').add(record);
+            },
+            failure: function(response, opts) {
+                console.log('failure');
+            }
+        });
+
+        view.destroy();
+
+    },
+
     onUpdateTap: function(button, e, eOpts) {
         var view = this.getView(),
             record = view.getRecord();

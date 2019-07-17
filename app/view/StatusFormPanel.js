@@ -45,12 +45,14 @@ Ext.define('SenchaCrud.view.StatusFormPanel', {
         {
             xtype: 'textfield',
             bind: '{record.name}',
-            label: 'Name'
+            label: 'Name',
+            name: 'name'
         },
         {
             xtype: 'textfield',
             bind: '{record.description}',
-            label: 'Description'
+            label: 'Description',
+            name: 'description'
         },
         {
             xtype: 'toolbar',
@@ -59,7 +61,10 @@ Ext.define('SenchaCrud.view.StatusFormPanel', {
                 {
                     xtype: 'button',
                     id: 'Save',
-                    text: 'Save'
+                    text: 'Save',
+                    listeners: {
+                        tap: 'onSaveTap'
+                    }
                 },
                 {
                     xtype: 'button',
