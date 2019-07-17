@@ -364,7 +364,6 @@
             "userConfig": {
                 "fn": "onFormPanelAdded",
                 "implHandler": [
-                    "console.log('added');",
                     "if (this.getView().getRecord()) {",
                     "    Ext.getCmp('Save').hide();",
                     "} else {",

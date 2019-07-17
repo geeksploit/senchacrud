@@ -93,7 +93,6 @@ Ext.define('SenchaCrud.view.StatusFormPanelViewController', {
     },
 
     onFormPanelAdded: function(component, container, index, eOpts) {
-        console.log('added');
         if (this.getView().getRecord()) {
             Ext.getCmp('Save').hide();
         } else {
