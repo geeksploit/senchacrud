@@ -54,12 +54,14 @@ Ext.define('SenchaCrud.view.BoardGamesAdmin', {
                     columns: [
                         {
                             xtype: 'column',
+                            flex: '1',
                             width: 70,
                             dataIndex: 'name',
-                            text: 'Name1'
+                            text: 'Name'
                         },
                         {
                             xtype: 'column',
+                            flex: '2',
                             width: 70,
                             dataIndex: 'description',
                             text: 'Description'

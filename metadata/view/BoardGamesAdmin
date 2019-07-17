@@ -103,7 +103,8 @@
                                 "dataIndex": "name",
                                 "designer|displayName": "Name",
                                 "docked": null,
-                                "text": "Name1",
+                                "flex": "1",
+                                "text": "Name",
                                 "width": 70
                             },
                             "configAlternates": {
@@ -111,10 +112,18 @@
                                 "designer|displayName": "string",
                                 "docked": "string",
                                 "text": "string",
-                                "width": "auto"
+                                "width": "auto",
+                                "flex": "string"
                             },
                             "name": "MyColumn",
-                            "designerId": "75bd26d2-66d5-4326-ab1f-88396d893782"
+                            "designerId": "75bd26d2-66d5-4326-ab1f-88396d893782",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "flex",
+                                    "type": "string"
+                                }
+                            ]
                         },
                         {
                             "type": "Ext.grid.column.Column",
@@ -127,6 +136,7 @@
                                 "dataIndex": "description",
                                 "designer|displayName": "Description",
                                 "docked": null,
+                                "flex": "2",
                                 "text": "Description",
                                 "width": 70
                             },
@@ -135,10 +145,18 @@
                                 "docked": "string",
                                 "text": "string",
                                 "width": "auto",
-                                "designer|displayName": "string"
+                                "designer|displayName": "string",
+                                "flex": "string"
                             },
                             "name": "MyColumn1",
-                            "designerId": "0e10508b-6cc8-4df3-8d58-60fc5f9fe694"
+                            "designerId": "0e10508b-6cc8-4df3-8d58-60fc5f9fe694",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "flex",
+                                    "type": "string"
+                                }
+                            ]
                         },
                         {
                             "type": "viewcontrollereventbinding",
