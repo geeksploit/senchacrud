@@ -46,6 +46,16 @@ Ext.define('SenchaCrud.view.StatusFormPanelViewController', {
         });
 
         view.destroy();
+    },
+
+    onFormPanelAdded: function(component, container, index, eOpts) {
+        console.log('added');
+        if (this.getView().getRecord()) {
+            Ext.getCmp('Save').hide();
+        } else {
+            Ext.getCmp('Delete').hide();
+            Ext.getCmp('Update').hide();
+        }
     }
 
 });

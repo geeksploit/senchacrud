@@ -58,7 +58,13 @@ Ext.define('SenchaCrud.view.StatusFormPanel', {
             items: [
                 {
                     xtype: 'button',
+                    id: 'Save',
                     text: 'Save'
+                },
+                {
+                    xtype: 'button',
+                    id: 'Update',
+                    text: 'Update'
                 },
                 {
                     xtype: 'button',
@@ -72,6 +78,7 @@ Ext.define('SenchaCrud.view.StatusFormPanel', {
                 },
                 {
                     xtype: 'button',
+                    id: 'Delete',
                     style: 'background-color: mistyrose',
                     text: 'Delete',
                     listeners: {
@@ -80,6 +87,9 @@ Ext.define('SenchaCrud.view.StatusFormPanel', {
                 }
             ]
         }
-    ]
+    ],
+    listeners: {
+        added: 'onFormPanelAdded'
+    }
 
 });

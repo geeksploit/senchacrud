@@ -109,13 +109,33 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "id": "Save",
                         "text": "Save"
                     },
                     "configAlternates": {
-                        "text": "string"
+                        "text": "string",
+                        "id": "string"
                     },
                     "name": "MyButton1",
                     "designerId": "5d70cbc9-6184-4db3-b569-057928e2eab2"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "Update",
+                        "text": "Update"
+                    },
+                    "configAlternates": {
+                        "text": "string",
+                        "id": "string"
+                    },
+                    "name": "MyButton4",
+                    "designerId": "21a290f5-f79f-4608-9ca7-a8b5b39171bc"
                 },
                 {
                     "type": "Ext.Button",
@@ -182,6 +202,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "id": "Delete",
                         "style": [
                             "background-color: mistyrose"
                         ],
@@ -189,6 +210,7 @@
                     },
                     "configAlternates": {
                         "text": "string",
+                        "id": "string",
                         "style": "object"
                     },
                     "name": "MyButton3",
@@ -239,6 +261,36 @@
                     ]
                 }
             ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onFormPanelAdded",
+                "implHandler": [
+                    "console.log('added');",
+                    "if (this.getView().getRecord()) {",
+                    "    Ext.getCmp('Save').hide();",
+                    "} else {",
+                    "    Ext.getCmp('Delete').hide();",
+                    "    Ext.getCmp('Update').hide();",
+                    "}"
+                ],
+                "name": "added",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onFormPanelAdded",
+            "designerId": "d42fe09c-a116-45d8-a8fe-039da14c3aac"
         }
     ]
 }
