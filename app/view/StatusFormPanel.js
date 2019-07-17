@@ -64,7 +64,10 @@ Ext.define('SenchaCrud.view.StatusFormPanel', {
                 {
                     xtype: 'button',
                     id: 'Update',
-                    text: 'Update'
+                    text: 'Update',
+                    listeners: {
+                        tap: 'onUpdateTap'
+                    }
                 },
                 {
                     xtype: 'button',

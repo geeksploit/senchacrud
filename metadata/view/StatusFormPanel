@@ -135,7 +135,51 @@
                         "id": "string"
                     },
                     "name": "MyButton4",
-                    "designerId": "21a290f5-f79f-4608-9ca7-a8b5b39171bc"
+                    "designerId": "21a290f5-f79f-4608-9ca7-a8b5b39171bc",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onUpdateTap",
+                                "implHandler": [
+                                    "var view = this.getView(),",
+                                    "    record = view.getRecord();",
+                                    "delete record.data.id;",
+                                    "",
+                                    "Ext.Ajax.request({",
+                                    "    url: record.data._links.self.href,",
+                                    "    method: 'PUT',",
+                                    "    jsonData: record.data,",
+                                    "    success: function(response, opts) {",
+                                    "        console.log('success');",
+                                    "        record.commit();",
+                                    "    },",
+                                    "    failure: function(response, opts) {",
+                                    "        console.log('failure');",
+                                    "        record.reject();",
+                                    "    }",
+                                    "});",
+                                    "",
+                                    "view.destroy();"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onUpdateTap",
+                            "designerId": "2a29a79b-6edc-4712-8536-aac457fd58a5"
+                        }
+                    ]
                 },
                 {
                     "type": "Ext.Button",
