@@ -24,6 +24,28 @@ Ext.define('SenchaCrud.view.StatusFormPanelViewController', {
         if (record) {
             record.reject();
         }
+    },
+
+    onDeleteButtonTap: function(button, e, eOpts) {
+        var view = this.getView(),
+            record = view.getRecord();
+        delete record.data.id;
+
+        Ext.Ajax.request({
+            url: record.data._links.self.href,
+            method: 'DELETE',
+            jsonData: record.data,
+            success: function(response, opts) {
+                console.log('success');
+                record.commit();
+            },
+            failure: function(response, opts) {
+                console.log('failure');
+                record.reject();
+            }
+        });
+
+        view.destroy();
     }
 
 });

@@ -72,7 +72,11 @@ Ext.define('SenchaCrud.view.StatusFormPanel', {
                 },
                 {
                     xtype: 'button',
-                    text: 'Delete'
+                    style: 'background-color: mistyrose',
+                    text: 'Delete',
+                    listeners: {
+                        tap: 'onDeleteButtonTap'
+                    }
                 }
             ]
         }
