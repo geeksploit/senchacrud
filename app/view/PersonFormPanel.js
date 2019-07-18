@@ -71,7 +71,10 @@ Ext.define('SenchaCrud.view.PersonFormPanel', {
                 {
                     xtype: 'button',
                     itemId: 'cancel',
-                    text: 'Cancel'
+                    text: 'Cancel',
+                    listeners: {
+                        tap: 'onCancelTap'
+                    }
                 },
                 {
                     xtype: 'spacer'

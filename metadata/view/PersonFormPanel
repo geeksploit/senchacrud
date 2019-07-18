@@ -153,7 +153,38 @@
                         "itemId": "string"
                     },
                     "name": "MyButton7",
-                    "designerId": "d04a1757-9085-4059-b035-e184b4e62c34"
+                    "designerId": "d04a1757-9085-4059-b035-e184b4e62c34",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onCancelTap",
+                                "implHandler": [
+                                    "var view = this.getView(),",
+                                    "    record = view.getRecord();",
+                                    "view.destroy();",
+                                    "if (record) {",
+                                    "    record.reject();",
+                                    "}"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onCancelTap",
+                            "designerId": "add47ff1-0eb9-43e0-ba1b-1df8a8ad1ff1"
+                        }
+                    ]
                 },
                 {
                     "type": "Ext.Spacer",

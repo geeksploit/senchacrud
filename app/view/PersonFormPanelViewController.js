@@ -17,6 +17,15 @@ Ext.define('SenchaCrud.view.PersonFormPanelViewController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.personformpanel',
 
+    onCancelTap: function(button, e, eOpts) {
+        var view = this.getView(),
+            record = view.getRecord();
+        view.destroy();
+        if (record) {
+            record.reject();
+        }
+    },
+
     onFormPanelAdded: function(component, container, index, eOpts) {
         if (this.getView().getRecord()) {
             component.down('#save').hide();
