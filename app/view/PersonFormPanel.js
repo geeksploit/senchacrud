@@ -89,7 +89,10 @@ Ext.define('SenchaCrud.view.PersonFormPanel', {
                     xtype: 'button',
                     itemId: 'delete',
                     style: 'background-color: mistyrose',
-                    text: 'Delete'
+                    text: 'Delete',
+                    listeners: {
+                        tap: 'onDeleteTap'
+                    }
                 }
             ]
         }

@@ -305,7 +305,50 @@
                         "style": "object"
                     },
                     "name": "MyButton8",
-                    "designerId": "2eb11175-cbf8-45dc-9e14-7ed8bd0259ef"
+                    "designerId": "2eb11175-cbf8-45dc-9e14-7ed8bd0259ef",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onDeleteTap",
+                                "implHandler": [
+                                    "var view = this.getView(),",
+                                    "    record = view.getRecord();",
+                                    "delete record.data.id;",
+                                    "",
+                                    "Ext.Ajax.request({",
+                                    "    url: record.data._links.self.href,",
+                                    "    method: 'DELETE',",
+                                    "    jsonData: record.data,",
+                                    "    success: function(response, opts) {",
+                                    "        console.log('success');",
+                                    "        Ext.getStore('People').remove(record);",
+                                    "    },",
+                                    "    failure: function(response, opts) {",
+                                    "        console.log('failure');",
+                                    "    }",
+                                    "});",
+                                    "",
+                                    "view.destroy();"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onDeleteTap",
+                            "designerId": "39ae03b2-a92e-4f1f-bea3-c24a4278b7f6"
+                        }
+                    ]
                 }
             ]
         },

@@ -71,6 +71,27 @@ Ext.define('SenchaCrud.view.PersonFormPanelViewController', {
         }
     },
 
+    onDeleteTap: function(button, e, eOpts) {
+        var view = this.getView(),
+            record = view.getRecord();
+        delete record.data.id;
+
+        Ext.Ajax.request({
+            url: record.data._links.self.href,
+            method: 'DELETE',
+            jsonData: record.data,
+            success: function(response, opts) {
+                console.log('success');
+                Ext.getStore('People').remove(record);
+            },
+            failure: function(response, opts) {
+                console.log('failure');
+            }
+        });
+
+        view.destroy();
+    },
+
     onFormPanelAdded: function(component, container, index, eOpts) {
         if (this.getView().getRecord()) {
             component.down('#save').hide();
