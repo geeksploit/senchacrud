@@ -39,7 +39,31 @@ Ext.define('SenchaCrud.view.BoardGamesAdmin', {
         },
         {
             xtype: 'container',
-            title: 'Tab 2'
+            title: 'People',
+            items: [
+                {
+                    xtype: 'grid',
+                    height: '100%',
+                    width: '100%',
+                    store: 'People',
+                    columns: [
+                        {
+                            xtype: 'column',
+                            flex: '1',
+                            width: 70,
+                            dataIndex: 'firstName',
+                            text: 'First Name'
+                        },
+                        {
+                            xtype: 'column',
+                            flex: '1',
+                            width: 70,
+                            dataIndex: 'lastName',
+                            text: 'Last Name'
+                        }
+                    ]
+                }
+            ]
         },
         {
             xtype: 'container',

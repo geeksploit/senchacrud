@@ -44,13 +44,101 @@
             },
             "codeClass": null,
             "userConfig": {
-                "title": "Tab 2"
+                "title": "People"
             },
             "configAlternates": {
                 "title": "string"
             },
             "name": "MyContainer1",
-            "designerId": "7a0feb5f-f950-4966-a3af-451815511067"
+            "designerId": "7a0feb5f-f950-4966-a3af-451815511067",
+            "cn": [
+                {
+                    "type": "Ext.grid.Grid",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "PeopleGrid",
+                        "height": "100%",
+                        "store": "People",
+                        "width": "100%"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "height": "auto",
+                        "store": "store",
+                        "width": "auto"
+                    },
+                    "name": "MyGrid1",
+                    "designerId": "e46548f1-6065-4364-a5bd-64b165274ea6",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "firstName",
+                                "docked": null,
+                                "flex": "1",
+                                "text": "First Name",
+                                "width": 70
+                            },
+                            "configAlternates": {
+                                "dataIndex": "datafield",
+                                "docked": "string",
+                                "flex": "string",
+                                "text": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyColumn2",
+                            "designerId": "a93a4939-5a44-406f-938e-c4869f27bc62",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "flex",
+                                    "type": "string"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "lastName",
+                                "docked": null,
+                                "flex": "1",
+                                "text": "Last Name",
+                                "width": 70
+                            },
+                            "configAlternates": {
+                                "dataIndex": "datafield",
+                                "docked": "string",
+                                "text": "string",
+                                "width": "auto",
+                                "flex": "string"
+                            },
+                            "name": "MyColumn3",
+                            "designerId": "880e217c-2009-47e0-93d2-861f4c4c30f9",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "flex",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
         {
             "type": "Ext.Container",
