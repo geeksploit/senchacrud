@@ -258,7 +258,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "fn": "onCancelButtonTap",
+                                "fn": "onCancelTap",
                                 "implHandler": [
                                     "var view = this.getView(),",
                                     "    record = view.getRecord();",
@@ -276,7 +276,7 @@
                                 "name": "string",
                                 "scope": "string"
                             },
-                            "name": "onCancelButtonTap",
+                            "name": "onCancelTap",
                             "designerId": "9aba9550-3592-475c-8c1b-29c9ad01261c"
                         }
                     ]
@@ -322,7 +322,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "fn": "onDeleteButtonTap",
+                                "fn": "onDeleteTap",
                                 "implHandler": [
                                     "var view = this.getView(),",
                                     "    record = view.getRecord();",
@@ -352,7 +352,7 @@
                                 "name": "string",
                                 "scope": "string"
                             },
-                            "name": "onDeleteButtonTap",
+                            "name": "onDeleteTap",
                             "designerId": "faf4d33f-6462-4f54-ac53-f0071ac47258"
                         }
                     ]

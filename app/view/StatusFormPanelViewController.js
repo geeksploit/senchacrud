@@ -62,7 +62,7 @@ Ext.define('SenchaCrud.view.StatusFormPanelViewController', {
         view.destroy();
     },
 
-    onCancelButtonTap: function(button, e, eOpts) {
+    onCancelTap: function(button, e, eOpts) {
         var view = this.getView(),
             record = view.getRecord();
         view.destroy();
@@ -71,7 +71,7 @@ Ext.define('SenchaCrud.view.StatusFormPanelViewController', {
         }
     },
 
-    onDeleteButtonTap: function(button, e, eOpts) {
+    onDeleteTap: function(button, e, eOpts) {
         var view = this.getView(),
             record = view.getRecord();
         delete record.data.id;

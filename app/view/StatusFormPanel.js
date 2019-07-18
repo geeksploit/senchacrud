@@ -79,7 +79,7 @@ Ext.define('SenchaCrud.view.StatusFormPanel', {
                     itemId: 'cancel',
                     text: 'Cancel',
                     listeners: {
-                        tap: 'onCancelButtonTap'
+                        tap: 'onCancelTap'
                     }
                 },
                 {
@@ -91,7 +91,7 @@ Ext.define('SenchaCrud.view.StatusFormPanel', {
                     style: 'background-color: mistyrose',
                     text: 'Delete',
                     listeners: {
-                        tap: 'onDeleteButtonTap'
+                        tap: 'onDeleteTap'
                     }
                 }
             ]
