@@ -17,6 +17,29 @@ Ext.define('SenchaCrud.view.PersonFormPanelViewController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.personformpanel',
 
+    onSaveTap: function(button, e, eOpts) {
+        var view = this.getView(),
+            data = view.getValues();
+
+        Ext.Ajax.request({
+            url: 'http://localhost:8080/api/persons',
+            method: 'POST',
+            jsonData: data,
+            success: function(response, opts) {
+                console.log('success');
+                var json = Ext.JSON.decode(response.responseText),
+                    record = Ext.create('SenchaCrud.model.Person', json);
+                Ext.getStore('People').add(record);
+            },
+            failure: function(response, opts) {
+                console.log('failure');
+            }
+        });
+
+        view.destroy();
+
+    },
+
     onCancelTap: function(button, e, eOpts) {
         var view = this.getView(),
             record = view.getRecord();
