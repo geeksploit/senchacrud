@@ -109,9 +109,11 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "itemId": "save",
                         "text": "Save"
                     },
                     "configAlternates": {
+                        "itemId": "string",
                         "text": "string"
                     },
                     "name": "MyButton5",
@@ -125,10 +127,12 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "itemId": "update",
                         "text": "Update"
                     },
                     "configAlternates": {
-                        "text": "string"
+                        "text": "string",
+                        "itemId": "string"
                     },
                     "name": "MyButton6",
                     "designerId": "9d499e21-a093-4abe-9e7c-082bce084bc8"
@@ -141,10 +145,12 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "itemId": "cancel",
                         "text": "Cancel"
                     },
                     "configAlternates": {
-                        "text": "string"
+                        "text": "string",
+                        "itemId": "string"
                     },
                     "name": "MyButton7",
                     "designerId": "d04a1757-9085-4059-b035-e184b4e62c34"
@@ -167,6 +173,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "itemId": "delete",
                         "style": [
                             "background-color: mistyrose"
                         ],
@@ -174,12 +181,42 @@
                     },
                     "configAlternates": {
                         "text": "string",
+                        "itemId": "string",
                         "style": "object"
                     },
                     "name": "MyButton8",
                     "designerId": "2eb11175-cbf8-45dc-9e14-7ed8bd0259ef"
                 }
             ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onFormPanelAdded",
+                "implHandler": [
+                    "if (this.getView().getRecord()) {",
+                    "    component.down('#save').hide();",
+                    "} else {",
+                    "    component.down('#delete').hide();",
+                    "    component.down('#update').hide();",
+                    "}"
+                ],
+                "name": "added",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onFormPanelAdded",
+            "designerId": "92be27ab-724b-4d1f-a1b0-feb23dd7b17b"
         }
     ]
 }

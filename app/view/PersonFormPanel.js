@@ -19,6 +19,7 @@ Ext.define('SenchaCrud.view.PersonFormPanel', {
 
     requires: [
         'SenchaCrud.view.PersonFormPanelViewModel',
+        'SenchaCrud.view.PersonFormPanelViewController',
         'Ext.field.Text',
         'Ext.Toolbar',
         'Ext.Button',
@@ -29,6 +30,7 @@ Ext.define('SenchaCrud.view.PersonFormPanel', {
         floating: 'true'
     },
 
+    controller: 'personformpanel',
     viewModel: {
         type: 'personformpanel'
     },
@@ -58,14 +60,17 @@ Ext.define('SenchaCrud.view.PersonFormPanel', {
             items: [
                 {
                     xtype: 'button',
+                    itemId: 'save',
                     text: 'Save'
                 },
                 {
                     xtype: 'button',
+                    itemId: 'update',
                     text: 'Update'
                 },
                 {
                     xtype: 'button',
+                    itemId: 'cancel',
                     text: 'Cancel'
                 },
                 {
@@ -73,11 +78,15 @@ Ext.define('SenchaCrud.view.PersonFormPanel', {
                 },
                 {
                     xtype: 'button',
+                    itemId: 'delete',
                     style: 'background-color: mistyrose',
                     text: 'Delete'
                 }
             ]
         }
-    ]
+    ],
+    listeners: {
+        added: 'onFormPanelAdded'
+    }
 
 });

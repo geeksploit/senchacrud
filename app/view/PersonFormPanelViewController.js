@@ -15,5 +15,15 @@
 
 Ext.define('SenchaCrud.view.PersonFormPanelViewController', {
     extend: 'Ext.app.ViewController',
-    alias: 'controller.personformpanel'
+    alias: 'controller.personformpanel',
+
+    onFormPanelAdded: function(component, container, index, eOpts) {
+        if (this.getView().getRecord()) {
+            component.down('#save').hide();
+        } else {
+            component.down('#delete').hide();
+            component.down('#update').hide();
+        }
+    }
+
 });
