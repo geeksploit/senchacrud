@@ -30,7 +30,6 @@ Ext.define('SenchaCrud.view.BoardGamesAdmin', {
     viewModel: {
         type: 'boardgamesadmin'
     },
-    defaultListenerScope: true,
 
     items: [
         {
@@ -71,10 +70,7 @@ Ext.define('SenchaCrud.view.BoardGamesAdmin', {
                             xtype: 'button',
                             text: 'New Person',
                             listeners: {
-                                tap: {
-                                    fn: 'onNewPersonButtonTap',
-                                    scope: 'controller'
-                                }
+                                tap: 'onNewPersonButtonTap'
                             }
                         }
                     ]
@@ -108,10 +104,7 @@ Ext.define('SenchaCrud.view.BoardGamesAdmin', {
                         }
                     ],
                     listeners: {
-                        itemsingletap: {
-                            fn: 'onStatusGridItemSingleTap',
-                            scope: 'controller'
-                        }
+                        itemsingletap: 'onStatusGridItemSingleTap'
                     }
                 },
                 {
@@ -130,14 +123,6 @@ Ext.define('SenchaCrud.view.BoardGamesAdmin', {
                 }
             ]
         }
-    ],
-
-    onNewStatusButtonTap: function(button, e, eOpts) {
-        var optimalWidth = Math.floor(Ext.Viewport.windowWidth * 0.9);
-        Ext.Viewport.add({
-            xtype: 'statusformpanel',
-            width: optimalWidth
-        });
-    }
+    ]
 
 });

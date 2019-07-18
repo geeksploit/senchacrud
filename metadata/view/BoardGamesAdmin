@@ -387,7 +387,7 @@
                             "designerId": "56335117-5c57-435a-b9f0-12a03b233fb5",
                             "cn": [
                                 {
-                                    "type": "basiceventbinding",
+                                    "type": "viewcontrollereventbinding",
                                     "reference": {
                                         "name": "listeners",
                                         "type": "array"
@@ -402,15 +402,17 @@
                                             "    width: optimalWidth",
                                             "});"
                                         ],
-                                        "name": "tap"
+                                        "name": "tap",
+                                        "scope": "me"
                                     },
                                     "configAlternates": {
                                         "fn": "string",
                                         "implHandler": "code",
-                                        "name": "string"
+                                        "name": "string",
+                                        "scope": "string"
                                     },
                                     "name": "onNewStatusButtonTap",
-                                    "designerId": "afcaa30e-ff20-4ad1-bb82-80e962e87427"
+                                    "designerId": "b39cfbb2-2e26-4373-8012-bf303cacb2dd"
                                 }
                             ]
                         }

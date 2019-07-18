@@ -37,6 +37,14 @@ Ext.define('SenchaCrud.view.BoardGamesAdminViewController', {
                 }
             }
         });
+    },
+
+    onNewStatusButtonTap: function(button, e, eOpts) {
+        var optimalWidth = Math.floor(Ext.Viewport.windowWidth * 0.9);
+        Ext.Viewport.add({
+            xtype: 'statusformpanel',
+            width: optimalWidth
+        });
     }
 
 });
