@@ -69,7 +69,10 @@ Ext.define('SenchaCrud.view.PersonFormPanel', {
                 {
                     xtype: 'button',
                     itemId: 'update',
-                    text: 'Update'
+                    text: 'Update',
+                    listeners: {
+                        tap: 'onUpdateTap'
+                    }
                 },
                 {
                     xtype: 'button',
