@@ -60,7 +60,10 @@ Ext.define('SenchaCrud.view.BoardGamesAdmin', {
                             dataIndex: 'lastName',
                             text: 'Last Name'
                         }
-                    ]
+                    ],
+                    listeners: {
+                        itemsingletap: 'onPersonGridItemSingleTap'
+                    }
                 },
                 {
                     xtype: 'toolbar',

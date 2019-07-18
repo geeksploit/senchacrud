@@ -135,6 +135,40 @@
                                     "type": "string"
                                 }
                             ]
+                        },
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onPersonGridItemSingleTap",
+                                "implHandler": [
+                                    "var optimalWidth = Math.floor(Ext.Viewport.windowWidth * 0.9);",
+                                    "Ext.Viewport.add({",
+                                    "    xtype: 'personformpanel',",
+                                    "    width: optimalWidth,",
+                                    "    record: record,",
+                                    "    viewModel: {",
+                                    "        data: {",
+                                    "            record: record",
+                                    "        }",
+                                    "    }",
+                                    "});"
+                                ],
+                                "name": "itemsingletap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onPersonGridItemSingleTap",
+                            "designerId": "64ef34fb-e3fd-4856-8c2d-ca76c4eb8cae"
                         }
                     ]
                 },
