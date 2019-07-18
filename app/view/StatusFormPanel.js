@@ -60,7 +60,7 @@ Ext.define('SenchaCrud.view.StatusFormPanel', {
             items: [
                 {
                     xtype: 'button',
-                    id: 'Save',
+                    itemId: 'save',
                     text: 'Save',
                     listeners: {
                         tap: 'onSaveTap'
@@ -68,7 +68,7 @@ Ext.define('SenchaCrud.view.StatusFormPanel', {
                 },
                 {
                     xtype: 'button',
-                    id: 'Update',
+                    itemId: 'update',
                     text: 'Update',
                     listeners: {
                         tap: 'onUpdateTap'
@@ -76,6 +76,7 @@ Ext.define('SenchaCrud.view.StatusFormPanel', {
                 },
                 {
                     xtype: 'button',
+                    itemId: 'cancel',
                     text: 'Cancel',
                     listeners: {
                         tap: 'onCancelButtonTap'
@@ -86,7 +87,7 @@ Ext.define('SenchaCrud.view.StatusFormPanel', {
                 },
                 {
                     xtype: 'button',
-                    id: 'Delete',
+                    itemId: 'delete',
                     style: 'background-color: mistyrose',
                     text: 'Delete',
                     listeners: {

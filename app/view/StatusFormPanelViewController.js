@@ -94,10 +94,10 @@ Ext.define('SenchaCrud.view.StatusFormPanelViewController', {
 
     onFormPanelAdded: function(component, container, index, eOpts) {
         if (this.getView().getRecord()) {
-            Ext.getCmp('Save').hide();
+            component.down('#save').hide();
         } else {
-            Ext.getCmp('Delete').hide();
-            Ext.getCmp('Update').hide();
+            component.down('#delete').hide();
+            component.down('#update').hide();
         }
     }
 

@@ -113,12 +113,13 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "id": "Save",
+                        "itemId": "save",
                         "text": "Save"
                     },
                     "configAlternates": {
                         "text": "string",
-                        "id": "string"
+                        "id": "string",
+                        "itemId": "string"
                     },
                     "name": "MyButton1",
                     "designerId": "5d70cbc9-6184-4db3-b569-057928e2eab2",
@@ -176,12 +177,13 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "id": "Update",
+                        "itemId": "update",
                         "text": "Update"
                     },
                     "configAlternates": {
                         "text": "string",
-                        "id": "string"
+                        "id": "string",
+                        "itemId": "string"
                     },
                     "name": "MyButton4",
                     "designerId": "21a290f5-f79f-4608-9ca7-a8b5b39171bc",
@@ -238,10 +240,12 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "itemId": "cancel",
                         "text": "Cancel"
                     },
                     "configAlternates": {
-                        "text": "string"
+                        "text": "string",
+                        "itemId": "string"
                     },
                     "name": "MyButton2",
                     "designerId": "5e5ed5da-1ed9-4439-b034-141965deb42d",
@@ -295,7 +299,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "id": "Delete",
+                        "itemId": "delete",
                         "style": [
                             "background-color: mistyrose"
                         ],
@@ -304,7 +308,8 @@
                     "configAlternates": {
                         "text": "string",
                         "id": "string",
-                        "style": "object"
+                        "style": "object",
+                        "itemId": "string"
                     },
                     "name": "MyButton3",
                     "designerId": "72ac9f76-9234-46c3-9da4-8bc0ad34a439",
@@ -365,10 +370,10 @@
                 "fn": "onFormPanelAdded",
                 "implHandler": [
                     "if (this.getView().getRecord()) {",
-                    "    Ext.getCmp('Save').hide();",
+                    "    component.down('#save').hide();",
                     "} else {",
-                    "    Ext.getCmp('Delete').hide();",
-                    "    Ext.getCmp('Update').hide();",
+                    "    component.down('#delete').hide();",
+                    "    component.down('#update').hide();",
                     "}"
                 ],
                 "name": "added",
