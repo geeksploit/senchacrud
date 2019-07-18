@@ -7,7 +7,8 @@
     "codeClass": null,
     "userConfig": {
         "models": [
-            "Status"
+            "Status",
+            "Person"
         ],
         "name": "SenchaCrud",
         "stores": [

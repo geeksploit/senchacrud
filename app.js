@@ -21,7 +21,8 @@ Ext.Loader.setConfig({
 
 Ext.application({
     models: [
-        'Status'
+        'Status',
+        'Person'
     ],
     stores: [
         'Statuses'
