@@ -25,7 +25,8 @@ Ext.application({
         'Person'
     ],
     stores: [
-        'Statuses'
+        'Statuses',
+        'People'
     ],
     views: [
         'BoardGamesAdmin',

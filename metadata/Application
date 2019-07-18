@@ -12,7 +12,8 @@
         ],
         "name": "SenchaCrud",
         "stores": [
-            "Statuses"
+            "Statuses",
+            "People"
         ],
         "views": [
             "BoardGamesAdmin",
