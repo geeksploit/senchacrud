@@ -62,6 +62,22 @@ Ext.define('SenchaCrud.view.BoardGamesAdmin', {
                             text: 'Last Name'
                         }
                     ]
+                },
+                {
+                    xtype: 'toolbar',
+                    docked: 'top',
+                    items: [
+                        {
+                            xtype: 'button',
+                            text: 'New Person',
+                            listeners: {
+                                tap: {
+                                    fn: 'onNewPersonButtonTap',
+                                    scope: 'controller'
+                                }
+                            }
+                        }
+                    ]
                 }
             ]
         },

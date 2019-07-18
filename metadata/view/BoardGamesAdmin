@@ -137,6 +137,72 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "type": "Ext.Toolbar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "CrudToolbar",
+                        "docked": "top"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "docked": "string"
+                    },
+                    "name": "MyToolbar3",
+                    "designerId": "c91af6d0-b063-4c64-93ea-ab3a12bce0e9",
+                    "cn": [
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": "New Person"
+                            },
+                            "configAlternates": {
+                                "text": "string"
+                            },
+                            "name": "MyButton9",
+                            "designerId": "cba45f34-3283-40f7-87f3-f48184e38e92",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onNewPersonButtonTap",
+                                        "implHandler": [
+                                            "var optimalWidth = Math.floor(Ext.Viewport.windowWidth * 0.9);",
+                                            "Ext.Viewport.add({",
+                                            "    xtype: 'personformpanel',",
+                                            "    width: optimalWidth",
+                                            "});"
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onNewPersonButtonTap",
+                                    "designerId": "25ef24e1-351e-4493-8ebb-aac3a5d52be3"
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         },

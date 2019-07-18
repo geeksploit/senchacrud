@@ -17,6 +17,14 @@ Ext.define('SenchaCrud.view.BoardGamesAdminViewController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.boardgamesadmin',
 
+    onNewPersonButtonTap: function(button, e, eOpts) {
+        var optimalWidth = Math.floor(Ext.Viewport.windowWidth * 0.9);
+        Ext.Viewport.add({
+            xtype: 'personformpanel',
+            width: optimalWidth
+        });
+    },
+
     onStatusGridItemSingleTap: function(dataview, index, target, record, e, eOpts) {
         var optimalWidth = Math.floor(Ext.Viewport.windowWidth * 0.9);
         Ext.Viewport.add({
