@@ -116,7 +116,7 @@ Ext.define('SenchaCrud.view.BoardGamesAdmin', {
                 },
                 {
                     xtype: 'toolbar',
-                    docked: 'bottom',
+                    docked: 'top',
                     items: [
                         {
                             xtype: 'button',

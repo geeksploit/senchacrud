@@ -356,8 +356,8 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|displayName": "CrudPanel",
-                        "docked": "bottom"
+                        "designer|displayName": "CrudToolbar",
+                        "docked": "top"
                     },
                     "configAlternates": {
                         "designer|displayName": "string",
