@@ -17,7 +17,8 @@
         ],
         "views": [
             "BoardGamesAdmin",
-            "StatusFormPanel"
+            "StatusFormPanel",
+            "PersonFormPanel"
         ]
     },
     "configAlternates": {

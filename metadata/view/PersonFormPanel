@@ -1,0 +1,185 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "bodyPadding": 8,
+        "centered": true,
+        "designer|userAlias": "personformpanel",
+        "designer|userClassName": "PersonFormPanel",
+        "floating": "true",
+        "maxWidth": 500,
+        "minWidth": 300,
+        "modal": true,
+        "title": "Person Form"
+    },
+    "configAlternates": {
+        "bodyPadding": "auto",
+        "centered": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "floating": "string",
+        "maxWidth": "auto",
+        "minWidth": "auto",
+        "modal": "boolean",
+        "title": "string"
+    },
+    "name": "MyFormPanel",
+    "designerId": "0b0210c0-10ab-4d7d-8398-190b44e9a31d",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "floating",
+            "type": "string"
+        }
+    ],
+    "viewControllerInstanceId": "832bbb1d-26af-4675-9c39-7d603185284a",
+    "viewModelInstanceId": "01a207fc-cc47-4319-bb1c-41bfa1572e6a",
+    "cn": [
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bind": [
+                    "{record.firstName}"
+                ],
+                "label": "First Name",
+                "name": "firstName"
+            },
+            "configAlternates": {
+                "bind": "object",
+                "label": "string",
+                "name": "string"
+            },
+            "name": "MyTextField2",
+            "designerId": "614d4f34-934d-4eb9-8a22-97d2add9372a"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bind": [
+                    "{record.lastName}"
+                ],
+                "label": "Last Name",
+                "name": "lastName"
+            },
+            "configAlternates": {
+                "label": "string",
+                "bind": "object",
+                "name": "string"
+            },
+            "name": "MyTextField3",
+            "designerId": "1e85251b-26d1-4a2d-8373-1e1ec7b9cb89"
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "PersonFormActionToolbar",
+                "docked": "bottom"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "docked": "string"
+            },
+            "name": "MyToolbar2",
+            "designerId": "4ff7ff86-83b3-44f6-87cd-2797819d76bb",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Save"
+                    },
+                    "configAlternates": {
+                        "text": "string"
+                    },
+                    "name": "MyButton5",
+                    "designerId": "8f88443f-d0e0-4107-9243-b8a59869d669"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Update"
+                    },
+                    "configAlternates": {
+                        "text": "string"
+                    },
+                    "name": "MyButton6",
+                    "designerId": "9d499e21-a093-4abe-9e7c-082bce084bc8"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Cancel"
+                    },
+                    "configAlternates": {
+                        "text": "string"
+                    },
+                    "name": "MyButton7",
+                    "designerId": "d04a1757-9085-4059-b035-e184b4e62c34"
+                },
+                {
+                    "type": "Ext.Spacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "MySpacer1",
+                    "designerId": "476bccff-a721-4fd3-8c04-3bbf3af3b61d"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "style": [
+                            "background-color: mistyrose"
+                        ],
+                        "text": "Delete"
+                    },
+                    "configAlternates": {
+                        "text": "string",
+                        "style": "object"
+                    },
+                    "name": "MyButton8",
+                    "designerId": "2eb11175-cbf8-45dc-9e14-7ed8bd0259ef"
+                }
+            ]
+        }
+    ]
+}
